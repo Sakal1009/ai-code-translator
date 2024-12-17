@@ -146,7 +146,7 @@ export default function Home() {
             </button>
           </a>
           <a href="https://x.com/sbdotio">
-            <button className="font">
+            <button className="font-interTight">
               Twitter
             </button>
           </a>
