@@ -130,7 +130,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sandbloc</title>
+        <title className='text-interTight'>Sandbloc</title>
         <meta
           name="description"
           content="Use AI to translate code from one language to another."
@@ -152,7 +152,7 @@ export default function Home() {
           </a>
         </div>
         <div className="flex flex-col items-center justify-center mt-10 sm:mt-20">
-          <div className="text-4xl font-bold">{"Sandbloc's Code Translator"}</div>
+          <div className="text-4xl font-bold font-interTight">{"Sandbloc's Code Translator"}</div>
         </div>
 
         <div className="mt-6 text-sm text-center">
