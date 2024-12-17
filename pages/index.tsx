@@ -141,14 +141,14 @@ export default function Home() {
       <div className="flex h-full min-h-screen flex-col items-center bg-[#0E1117] px-4 pb-20 text-neutral-200 sm:px-10">
         <div className="flex items-center justify-end gap-2">
           <a href="https://sandbloc.io" target="_blank">
-            <Button classNam='font-interTight'>
+            <button classNam='font-interTight'>
               Website
-            </Button>
+            </button>
           </a>
           <a href="https://x.com/sbdotio">
-            <Button className="font">
+            <button className="font">
               Twitter
-            </Button>
+            </button>
           </a>
         </div>
         <div className="flex flex-col items-center justify-center mt-10 sm:mt-20">
