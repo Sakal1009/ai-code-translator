@@ -141,7 +141,7 @@ export default function Home() {
       <div className="flex h-full min-h-screen flex-col items-center bg-[#0E1117] px-4 pb-20 text-neutral-200 sm:px-10">
         <div className="flex items-center justify-end gap-2">
           <a href="https://sandbloc.io" target="_blank">
-            <button classNam='font-interTight'>
+            <button className='font-interTight'>
               Website
             </button>
           </a>
