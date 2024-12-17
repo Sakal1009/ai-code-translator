@@ -130,24 +130,36 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Code Translator</title>
+        <title>Sandbloc</title>
         <meta
           name="description"
           content="Use AI to translate code from one language to another."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-clear(2).png" />
       </Head>
       <div className="flex h-full min-h-screen flex-col items-center bg-[#0E1117] px-4 pb-20 text-neutral-200 sm:px-10">
-        <div className="mt-10 flex flex-col items-center justify-center sm:mt-20">
-          <div className="text-4xl font-bold">AI Code Translator</div>
+        <div className="flex items-center justify-end gap-2">
+          <a href="https://sandbloc.io" target="_blank">
+            <Button classNam='font-interTight'>
+              Website
+            </Button>
+          </a>
+          <a href="https://x.com/sbdotio">
+            <Button className="font">
+              Twitter
+            </Button>
+          </a>
+        </div>
+        <div className="flex flex-col items-center justify-center mt-10 sm:mt-20">
+          <div className="text-4xl font-bold">Sandbloc's Code Translator</div>
         </div>
 
-        <div className="mt-6 text-center text-sm">
+        <div className="mt-6 text-sm text-center">
           <APIKeyInput apiKey={apiKey} onChange={handleApiKeyChange} />
         </div>
 
-        <div className="mt-2 flex items-center space-x-2">
+        <div className="flex items-center mt-2 space-x-2">
           <ModelSelect model={model} onChange={(value) => setModel(value)} />
 
           <button
@@ -159,17 +171,17 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="mt-2 text-center text-xs">
+        <div className="mt-2 text-xs text-center">
           {loading
             ? 'Translating...'
             : hasTranslated
-            ? 'Output copied to clipboard!'
-            : 'Enter some code and click "Translate"'}
+              ? 'Output copied to clipboard!'
+              : 'Enter some code and click "Translate"'}
         </div>
 
         <div className="mt-6 flex w-full max-w-[1200px] flex-col justify-between sm:flex-row sm:space-x-4">
-          <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
-            <div className="text-center text-xl font-bold">Input</div>
+          <div className="flex flex-col justify-center space-y-2 h-100 sm:w-2/4">
+            <div className="text-xl font-bold text-center">Input</div>
 
             <LanguageSelect
               language={inputLanguage}
@@ -201,8 +213,8 @@ export default function Home() {
               />
             )}
           </div>
-          <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
-            <div className="text-center text-xl font-bold">Output</div>
+          <div className="flex flex-col justify-center h-full mt-8 space-y-2 sm:mt-0 sm:w-2/4">
+            <div className="text-xl font-bold text-center">Output</div>
 
             <LanguageSelect
               language={outputLanguage}
