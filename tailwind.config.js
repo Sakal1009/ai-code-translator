@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: theme => ({
-        interTight: ['InterTight-Regular0'],
+        interTight: ['InterTight-Regular'],
       }),
     }
   },
