@@ -139,7 +139,7 @@ export default function Home() {
         <link rel="icon" href="/logo-clear(2).png" />
       </Head>
       <div className="flex h-full min-h-screen flex-col items-center bg-[#0E1117] px-4 pb-20 text-neutral-200 sm:px-10">
-        <div className="flex items-center justify-end gap-2">
+        <div className="flex flex-row items-center justify-end gap-2 mt-10">
           <a href="https://sandbloc.io" target="_blank">
             <button className='font-interTight'>
               Website
