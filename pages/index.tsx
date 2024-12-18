@@ -152,8 +152,9 @@ export default function Home() {
             </button>
           </a>
         </div>
-        <div className="flex flex-col items-center justify-center mt-10 sm:mt-20">
+        <div className="flex flex-col items-center justify-center gap-3 mt-10 sm:mt-20">
           <div className="text-4xl font-bold font-interTight">{"Sandbloc's Code Translator"}</div>
+            <img src="/Logo-clear(2).png" />
         </div>
 
         <div className="mt-6 text-sm text-center">
