@@ -153,8 +153,8 @@ export default function Home() {
           </a>
         </div>
         <div className="flex flex-col items-center justify-center gap-3 mt-10 sm:mt-20">
+          <img src="/Logo-clear(2).png" className="w-40" />
           <div className="text-4xl font-bold font-interTight">{"Sandbloc's Code Translator"}</div>
-            <img src="/Logo-clear(2).png" className="w-20"/>
         </div>
 
         <div className="mt-6 text-sm text-center">
